@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  jupyterhub:
+    build: .
+    image: my_jupyterhub
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./jupyterhub_config.py:/srv/jupyterhub/jupyterhub_config.py
+      - jupyterhub_data:/srv/jupyterhub/data
+    ports:
+      - "8000:8000"
+    networks:
+      - jupyterhub
+
+volumes:
+  jupyterhub_data:
+
+networks:
+  jupyterhub:
+    name: jupyterhub
