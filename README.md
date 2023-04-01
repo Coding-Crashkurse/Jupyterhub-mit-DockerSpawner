@@ -1,4 +1,4 @@
-# Willkommen zu deinem JupyterHub!
+# JupyterHub mit DockerSpawner
 
 Dieses Projekt enthält eine Beispielkonfiguration für einen JupyterHub-Server, der in Docker ausgeführt wird. Der JupyterHub ermöglicht es dir, Jupyter-Notebooks zu starten und gemeinsam mit anderen Nutzern zu bearbeiten.
 
